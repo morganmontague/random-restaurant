@@ -1,4 +1,5 @@
 import React from "react";
+import App from "./App";
 // import ReactDOM from "react-dom/client";
 
 
@@ -13,7 +14,8 @@ import React from "react";
 
 function List(props) {
 
-  const listItems = props.items.map((item)=><li key={item.id}>{item.title}</li>)
+
+  const listItems = props.items.length > 0 ? props.items.map((item)=><li key={item.id}>{item.title}</li>) : [] //// Josh helped me on this
 
   return <ul>{listItems}</ul>
 }

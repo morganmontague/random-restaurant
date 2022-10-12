@@ -4,6 +4,7 @@ import axios from 'axios'
 import './index.css';
 import HeaderForm from './HeaderForm';
 import List from './List';
+import BoxCard from './cards';
 
 
 
@@ -15,32 +16,23 @@ const [data, setData] = useState({})
 const baseURL = 'https://astute-baton-362318.ue.r.appspot.com/api/json/' 
 
 useEffect(()=> {
-
 axios.get(baseURL).then((response) => {
-const example = response.data
-console.log(example)
-  setData(example)
+setData(response.data)
 })
 }, [])
 
 
+// setData = {setData}
 
 
-const food = [
-    { title: 'Cabbage', id: 1 },
-    { title: 'Garlic', id: 2 },
-    { title: 'Apple', id: 3 },
-    {title: 'test', id: 5},
-  ];
 
 return(
     <>
-    <div><HeaderForm /></div>
-    <List items={food} />
+    <HeaderForm />
+    {/* <List items={data} /> */}
+    {<BoxCard />}
     </>
 )
-
-
 }
 
 

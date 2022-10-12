@@ -4,4 +4,13 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 20px
+}
+
+#menuCard{
+    background-color: pink;
+    height: 100px;
+    /* width: 100px; */
+    border: solid 1px black;
+    margin: 1rem;
 }
