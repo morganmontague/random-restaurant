@@ -12,9 +12,9 @@ import React from "react";
 
 
 function List(props) {
-  console.log('list is working')
+
   const listItems = props.items.map((item)=><li key={item.id}>{item.title}</li>)
-  console.log(listItems)
+
   return <ul>{listItems}</ul>
 }
 
