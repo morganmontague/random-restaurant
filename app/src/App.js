@@ -29,7 +29,7 @@ setData(response.data)
 return(
     <>
     <HeaderForm />
-    {/* <List items={data} /> */}
+    <List items={data} />
     {<BoxCard />}
     </>
 )
