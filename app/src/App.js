@@ -5,6 +5,11 @@ import './index.css';
 import HeaderForm from './HeaderForm';
 import List from './List';
 import BoxCard from './cards';
+// import Test from './addclick';
+import Breakfast from './breakfast';
+import Brunch from './brunch';
+import Lunch from './Lunch';
+// import getList from './test';
 
 
 
@@ -16,20 +21,33 @@ const [data, setData] = useState({})
 const baseURL = 'https://astute-baton-362318.ue.r.appspot.com/api/json/' 
 
 useEffect(()=> {
-axios.get(baseURL).then((response) => {
+function boo () {axios.get(baseURL).then((response) => {
 setData(response.data)
-})
-}, [])
+})}
+boo()}, [])
 
 
 // setData = {setData}
+
+
+    // function getList (props) {
+    //     console.log('click')
+    //     return <>
+    //     <button onClick={<getList items={props.data} />}>Trying to make a button</button>
+    //     </>
+    // }
 
 
 
 return(
     <>
     <HeaderForm />
-    <List items={data} />
+
+    
+    {/* <List items={data} /> */}
+    <Breakfast items={data} />
+    <Brunch items={data} />
+    <Lunch items={data} />
     {<BoxCard />}
     </>
 )
