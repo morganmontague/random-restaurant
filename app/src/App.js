@@ -9,7 +9,10 @@ import BoxCard from './cards';
 import Breakfast from './breakfast';
 import Brunch from './brunch';
 import Lunch from './Lunch';
-// import getList from './test';
+import Dinner from './dinner';
+import Apps_before from './beforethemeal';
+import Sides from './Sides';
+import Dessert from './Dessert';
 
 
 
@@ -48,6 +51,12 @@ return(
     <Breakfast items={data} />
     <Brunch items={data} />
     <Lunch items={data} />
+    <Apps_before items={data} />
+    <Dinner items={data} />
+    <Sides items={data} />
+    <Dessert items={data} />
+
+
     {<BoxCard />}
     </>
 )
