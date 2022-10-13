@@ -11,8 +11,7 @@ function Dinner(props) {
 
         const Dinner = props.items.filter(item =>
         item.category.title === 'Dinner')
-        console.log(Dinner)
-        const listItems = Dinner.map((item)=><li key={item.id}>{item.title}<br></br>{item.price}<br></br>{item.description}</li>) //// Josh helped me on this
+        const listItems = Dinner.map((item)=><li key={item.id}>{item.title}<br></br>${item.price}<br></br>{item.description}</li>) //// Josh helped me on this
         return( 
         <>
         <h1>Dinner</h1>

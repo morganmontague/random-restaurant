@@ -4,15 +4,15 @@ import App from "./App";
 
 
 
-function Sides(props) {
+function Side(props) {
 
 
         if(props.items.length > 0){
 
-        const Sides = props.items.filter(item =>
-        item.category.title === 'Sides')
-        console.log(Sides)
-        const listItems = Sides.map((item)=><li key={item.id}>{item.title}<br></br>{item.price}<br></br>{item.description}</li>) //// Josh helped me on this
+        const Side = props.items.filter(item =>
+        item.category.title === 'Side')
+        console.log(Side)
+        const listItems = Side.map((item)=><li key={item.id}>{item.title}<br></br>${item.price}<br></br>{item.description}</li>) //// Josh helped me on this
         return( 
         <>
         <h1>Sides</h1>
@@ -21,4 +21,4 @@ function Sides(props) {
     }
 }
 
-export default Sides
+export default Side

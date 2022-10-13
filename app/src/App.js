@@ -10,8 +10,8 @@ import Breakfast from './breakfast';
 import Brunch from './brunch';
 import Lunch from './Lunch';
 import Dinner from './dinner';
-import Apps_before from './beforethemeal';
-import Sides from './Sides';
+import Appetizer from './beforethemeal';
+import Side from './Sides';
 import Dessert from './Dessert';
 
 
@@ -51,9 +51,9 @@ return(
     <Breakfast items={data} />
     <Brunch items={data} />
     <Lunch items={data} />
-    <Apps_before items={data} />
+    <Appetizer items={data} />
     <Dinner items={data} />
-    <Sides items={data} />
+    <Side items={data} />
     <Dessert items={data} />
 
 
