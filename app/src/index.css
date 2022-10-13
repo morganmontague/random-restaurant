@@ -14,3 +14,26 @@
     border: solid 1px black;
     margin: 1rem;
 }
+
+#card {
+    background-color: aliceblue;
+}
+
+#address{
+    text-align: left;
+}
+#time{
+    text-align: right;
+}
+#foot{
+    background-color: gray;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    /* position: relative;
+    bottom: 0; */
+}
+#friedFries {
+    border: black 1px solid;
+    background-color: lightcoral;
+    margin-top: 1rem;
+}

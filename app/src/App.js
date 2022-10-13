@@ -5,7 +5,7 @@ import './index.css';
 import HeaderForm from './HeaderForm';
 import List from './List';
 import BoxCard from './cards';
-// import Test from './addclick';
+import ToggleClass from './addclick';
 import Breakfast from './breakfast';
 import Brunch from './brunch';
 import Lunch from './Lunch';
@@ -13,12 +13,14 @@ import Dinner from './dinner';
 import Appetizer from './beforethemeal';
 import Side from './Sides';
 import Dessert from './Dessert';
+import FooterTime from './Footer';
+import Test from './test';
 
 
 
 
 function App(props){
-
+const [isActive, setIsActive] = useState(false)
 const [data, setData] = useState({})
 
 const baseURL = 'https://astute-baton-362318.ue.r.appspot.com/api/json/' 
@@ -39,25 +41,41 @@ boo()}, [])
     //     <button onClick={<getList items={props.data} />}>Trying to make a button</button>
     //     </>
     // }
+    // function testingToggle () {
+        // const [isActive, setActive] = useState("false")
+        
+    
+    //  } 
+    //     const handleToggle = () => {
+    //         console.log('clicky')
+    //       setActive(!isActive);
+    //     }
 
+let fried = (isActive ? "d-none" : null)
+        
+    
+    function handleClick (props) {
+        console.log('Clicky')
+        setIsActive(current => !current)
+      return <Breakfast items={data} />
+    }
 
 
 return(
     <>
     <HeaderForm />
+    <button onClick={handleClick}>Click meh</button>
 
-    
     {/* <List items={data} /> */}
     <Breakfast items={data} />
-    <Brunch items={data} />
+    {/* <Brunch items={data} />
     <Lunch items={data} />
     <Appetizer items={data} />
     <Dinner items={data} />
     <Side items={data} />
-    <Dessert items={data} />
-
-
-    {<BoxCard />}
+    <Dessert items={data} /> */}
+    <BoxCard />
+    <FooterTime />
     </>
 )
 }

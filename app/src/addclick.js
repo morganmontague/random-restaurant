@@ -1,33 +1,15 @@
-// function Button(props) {
-//     return (
-//         <button onClick={props.handleClick}>CLICK ME</button>
-//     )
+// import React from "react";
+// import useState from 'react'
+
+// const ToggleClass = () => {
+//   const [isActive, setActive] = useState("false");
+//   setActive(!isActive); 
+// return (
+//   <div className={isActive ? "active" : null} >   
+//     <h1>Hello Devdojo</h1>
+//     <button onClick={ToggleClass}>Toggle class</button>    
+//   </div>
+// );
 // }
 
-
-// function App() {
-//     const clickAButton = (e) => {
-//         console.log(e);
-//         alert('CLICKED, EXECUTED FN FROM PARENT')
-//     }
-//     return (
-//         <>
-//             <Button handleClick={clickAButton} />
-//         </>
-//     );
-// }
-
-import React from "react";
-import App from "./App";
-
-
-
-function Test(props) {
-
-
-  const listItems = props.items.length > 0 ? props.items.map((item)=><li key={item.id}>{item.category.title}</li>) : [] //// Josh helped me on this
-
-  return <ul>{listItems}</ul>
-}
-
-export default Test;
+// export default ToggleClass
