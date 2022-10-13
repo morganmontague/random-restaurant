@@ -31,13 +31,3 @@ function FooterTime (){
 
 export default FooterTime
 
-function footerBar () {
-    return (<footer className="navbar navbar-expand-md navbar-dark sticky-bottom bg-warning">
-  <div className="container">
-    <div className="row">
-        <div className="col-6" id="address">Test</div>
-        <div className="col-6" id="time">Test</div>
-    </div>
-  </div>
-</footer>
-)}

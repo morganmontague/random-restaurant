@@ -22,6 +22,7 @@ import Test from './test';
 function App(props){
 const [isActive, setIsActive] = useState(false)
 const [data, setData] = useState({})
+const [page, setPage] = useState('Home')
 
 const baseURL = 'https://astute-baton-362318.ue.r.appspot.com/api/json/' 
 
@@ -54,18 +55,18 @@ boo()}, [])
 let fried = (isActive ? "d-none" : null)
         
     
-    function handleClick (props) {
-        console.log('Clicky')
-        setIsActive(current => !current)
-      return <Breakfast items={data} />
+    function handleClick (e) {
+        console.log(e.target.firstChild.data)
+        setPage =e.target.firstChild.data
+        console.log(page)
     }
-
+console.log(page)
 
 return(
     <>
     <HeaderForm />
-    <button onClick={handleClick}>Click meh</button>
-
+    <button  onClick={handleClick}>Click meh</button>
+    
     {/* <List items={data} /> */}
     <Breakfast items={data} />
     {/* <Brunch items={data} />
