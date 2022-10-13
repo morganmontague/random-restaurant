@@ -5,7 +5,6 @@ import './index.css';
 import HeaderForm from './HeaderForm';
 import List from './List';
 import BoxCard from './cards';
-import ToggleClass from './addclick';
 import Breakfast from './breakfast';
 import Brunch from './brunch';
 import Lunch from './Lunch';
@@ -15,12 +14,13 @@ import Side from './Sides';
 import Dessert from './Dessert';
 import FooterTime from './Footer';
 import Test from './test';
+import NavBar from './navbar';
 
 
 
 
 function App(props){
-const [isActive, setIsActive] = useState(false)
+
 const [data, setData] = useState({})
 const [page, setPage] = useState('Home')
 
@@ -33,48 +33,42 @@ setData(response.data)
 boo()}, [])
 
 
-// setData = {setData}
 
 
-    // function getList (props) {
-    //     console.log('click')
-    //     return <>
-    //     <button onClick={<getList items={props.data} />}>Trying to make a button</button>
-    //     </>
-    // }
-    // function testingToggle () {
-        // const [isActive, setActive] = useState("false")
+
         
-    
-    //  } 
-    //     const handleToggle = () => {
-    //         console.log('clicky')
-    //       setActive(!isActive);
-    //     }
+function handleClick (e) {
+    setPage(e.target.firstChild.data)
+}
 
-let fried = (isActive ? "d-none" : null)
-        
-    
-    function handleClick (e) {
-        console.log(e.target.firstChild.data)
-        setPage =e.target.firstChild.data
-        console.log(page)
-    }
+
+{if (page ==='Breakfast'){
+    return <Breakfast items={data} />
+}}
+{if (page=== 'Brunch'){
+    return <Brunch items={data} />
+}}
+{if (page === 'Lunch') {
+return <Lunch items={data} />
+}}
+{if (page === 'Appitizer'){
+return <Appetizer items={data} />
+}}
+{if(page === 'Dinner'){
+return <Dinner items={data} />
+}}
+{if(page ==='Side'){
+return <Side items={data} />
+}}
+{if(page ==='Dessert'){
+    return <Dessert items={data} />
+}}
 console.log(page)
 
 return(
     <>
-    <HeaderForm />
-    <button  onClick={handleClick}>Click meh</button>
+    <NavBar handleClick={handleClick}/>
     
-    {/* <List items={data} /> */}
-    <Breakfast items={data} />
-    {/* <Brunch items={data} />
-    <Lunch items={data} />
-    <Appetizer items={data} />
-    <Dinner items={data} />
-    <Side items={data} />
-    <Dessert items={data} /> */}
     <BoxCard />
     <FooterTime />
     </>
