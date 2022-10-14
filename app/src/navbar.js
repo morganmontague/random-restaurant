@@ -8,7 +8,7 @@ function NavBar (props) {
     return (
     <nav className="navbar navbar-expand-md navbar-dark sticky-top bg-warning">  
     <div className="container-fluid">
-      <div className="navbar-brand" href="#">Store Name</div>
+      <div className="navbar-brand">Store Name</div>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>

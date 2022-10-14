@@ -37,3 +37,13 @@
     background-color: lightcoral;
     margin-top: 1rem;
 }
+
+#footer{
+    height: 10vh;
+}
+#bodies{
+    height: 80vh;
+}
+#heads{
+    height: 10vh;
+}

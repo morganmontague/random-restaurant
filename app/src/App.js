@@ -102,6 +102,7 @@ console.log(page)
         <>
     <NavBar handleClick={handleClick}/>
     <FooterTime />
+    
         </>
     )
 }}

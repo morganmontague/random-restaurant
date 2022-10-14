@@ -1,5 +1,6 @@
 import React from "react";
 import App from "./App";
+import Collapse from "./collapse";
 
 
 
@@ -10,13 +11,14 @@ function List(props) {
   const place = props.page
   const placeHolder = props.items.filter(item =>
   item.category.title === place)
-  const listItems = placeHolder.map((item)=><li key={item.id} className="card" id="friedFries">{item.title}<br></br>${item.price}<br></br>{item.description}</li>) //// Josh helped me on this
+  const listItems = placeHolder.map((item)=><div key={item.id} className="col-10 col-md-5 col-xl-3 card m-2" id="friedFries">{item.title}<br></br>${item.price}<br></br><Collapse index={item.id} item= {item.description}/></div>) //// Josh helped me on this
   return( 
   <>
-<div id="card">
+<div id="card bodies" >
 <h1>{place}</h1>
-<ul>{listItems}</ul>
+<div className="row justify-content-center">{listItems}</div>
 </div>
+
   </>)
 }
 }
