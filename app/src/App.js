@@ -1,14 +1,13 @@
 import React, {useState, useEffect} from 'react';
-
 import axios from 'axios'
 import './index.css';
 import List from './List';
-
 import FooterTime from './Footer';
-
 import NavBar from './navbar';
 
 
+
+{/* <img src={loadingGif} alt="wait until the page loads" /> */}
 
 
 function App(props){

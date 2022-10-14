@@ -2,7 +2,7 @@ import React from "react";
 
 function FooterTime (){
     return(
-        <footer className="footer fixed-bottom mt-auto py-3 bg-warning">
+        <footer className="footer fixed-bottom mt-auto py-3" id="foot">
         <div className="container">
           <div className="row justify-content-center">
           <div className="col-8 text-start">Address:<br></br>
