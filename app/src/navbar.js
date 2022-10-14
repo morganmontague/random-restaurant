@@ -4,6 +4,7 @@ import App from "./App";
 
 function NavBar (props) {
   
+  
     return (
     <nav className="navbar navbar-expand-md navbar-dark sticky-top bg-warning">  
     <div className="container-fluid">
@@ -26,7 +27,7 @@ function NavBar (props) {
             <button className="btn" onClick={props.handleClick}>Lunch</button>
           </li>
           <li className="nav-item">
-            <button className="btn" onClick={props.handleClick}>Appitizer</button>
+            <button className="btn" onClick={props.handleClick}>Appetizer</button>
           </li>
           <li className="nav-item">
             <button className="btn" onClick={props.handleClick}>Dinner</button>

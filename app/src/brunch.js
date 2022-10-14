@@ -16,14 +16,10 @@ function Brunch(props) {
         const listItems = brunch.map((item)=><li key={item.id} className="card" id="friedFries">{item.title}<br></br>${item.price}<br></br>{item.description}</li>) //// Josh helped me on this
         return( 
         <>
-        <NavBar handleClick={props.handleClick}/>
-    
     <div id="card">
     <h1>Brunch</h1>
     <ul>{listItems}</ul>
     </div>
-    <BoxCard />
-    <FooterTime />
         </>)
     }
 }

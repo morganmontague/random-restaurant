@@ -43,36 +43,85 @@ function handleClick (e) {
 
 
 {if (page ==='Breakfast'){
-    return <Breakfast items={data} />
+    return (
+    <>
+    <NavBar handleClick={handleClick}/>
+    <List page={page} items={data} />
+    <FooterTime />
+    </>)
 }}
 {if (page=== 'Brunch'){
-    return <Brunch items={data} />
+    return (
+    <>
+    <NavBar handleClick={handleClick}/>
+    <List page={page} items={data} />
+    <FooterTime />
+    </>
+    )
 }}
 {if (page === 'Lunch') {
-return <Lunch items={data} />
-}}
-{if (page === 'Appitizer'){
-return <Appetizer items={data} />
-}}
-{if(page === 'Dinner'){
-return <Dinner items={data} />
-}}
-{if(page ==='Side'){
-return <Side items={data} />
-}}
-{if(page ==='Dessert'){
-    return <Dessert items={data} />
-}}
-console.log(page)
-
 return(
     <>
     <NavBar handleClick={handleClick}/>
-    
-    <BoxCard />
+    <List page={page} items={data} />
     <FooterTime />
     </>
-)
+    )
+}}
+{if (page === 'Appetizer'){
+return (
+    <>
+    <NavBar handleClick={handleClick}/>
+    <List page={page} items={data} />
+    <FooterTime />
+    </>
+    )
+}}
+{if(page === 'Dinner'){
+return (
+    <>
+    <NavBar handleClick={handleClick}/>
+    <List page={page} items={data} />
+    <FooterTime />
+    </>
+    )
+}}
+{if(page ==='Side'){
+return (
+    <>
+    <NavBar handleClick={handleClick}/>
+    <List page={page} items={data} />
+    <FooterTime />
+    </>
+    )
+}}
+{if(page ==='Dessert'){
+    return (
+    <>
+    <NavBar handleClick={handleClick}/>
+    <List page={page} items={data} />
+    <FooterTime />
+    </>
+    )
+}}
+console.log(page)
+{if(page ==='Home'){
+    return(
+        <>
+    <NavBar handleClick={handleClick}/>
+    <FooterTime />
+        </>
+    )
+}}
+
+// return(
+//     <>
+//     <NavBar handleClick={handleClick}/>
+    
+//     <BoxCard />
+//     <FooterTime />
+//     </>
+// )
 }
 
 
