@@ -1,8 +1,8 @@
 import React from "react";
 import App from "./App";
-import {useState} from "react"
-
-
+import NavBar from "./navbar";
+import FooterTime from "./Footer";
+import BoxCard from "./cards";
 
 
 function Breakfast(props) {
@@ -13,11 +13,15 @@ function Breakfast(props) {
         item.category.title === 'Breakfast')
         const listItems = breakfasts.map((item)=><li key={item.id} className="card" id="friedFries">{item.title}&nbsp; &nbsp; &nbsp;${item.price}<br></br>{item.description}</li>) //// Josh helped me on this
         return( 
-        <>
+        <>    
+        <NavBar handleClick={props.handleClick}/>
+    
         <div id="card">
         <h1>Breakfast</h1>
         <ul>{listItems}</ul>
         </div>
+        <BoxCard />
+        <FooterTime />
         </>)
     }
         // const listBreakfast = breakfast.map((item)=><li key={item.id}>{item.title}</li>)

@@ -1,6 +1,7 @@
 import React from "react";
 import App from "./App";
 
+
 function NavBar (props) {
   
     return (
@@ -31,7 +32,7 @@ function NavBar (props) {
             <button className="btn" onClick={props.handleClick}>Dinner</button>
           </li>
           <li className="nav-item">
-            <button className="btn" onClick={props.handleClick}>Sides</button>
+            <button className="btn" onClick={props.handleClick}>Side</button>
           </li>
           <li className="nav-item">
             <button className="btn" onClick={props.handleClick}>Dessert</button>

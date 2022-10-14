@@ -1,5 +1,8 @@
 import React from "react";
 import App from "./App";
+import NavBar from "./navbar";
+import FooterTime from "./Footer";
+import BoxCard from "./cards";
 
 
 
@@ -12,11 +15,17 @@ function Appetizer(props) {
         const Appetizer = props.items.filter(item =>
         item.category.title === 'Appetizer')
         console.log(Appetizer)
-        const listItems = Appetizer.map((item)=><li key={item.id}>{item.title}<br></br>${item.price}<br></br>{item.description}</li>) //// Josh helped me on this
+        const listItems = Appetizer.map((item)=><li key={item.id} className="card" id="friedFries">{item.title}<br></br>${item.price}<br></br>{item.description}</li>) //// Josh helped me on this
         return( 
         <>
-        <h1>Appetizers</h1>
-        <ul>{listItems}</ul>
+        <NavBar handleClick={props.handleClick}/>
+    
+    <div id="card">
+    <h1>Appetizer</h1>
+    <ul>{listItems}</ul>
+    </div>
+    <BoxCard />
+    <FooterTime />
         </>)
     }
 }

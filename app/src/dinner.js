@@ -1,6 +1,8 @@
 import React from "react";
 import App from "./App";
-
+import NavBar from "./navbar";
+import FooterTime from "./Footer";
+import BoxCard from "./cards";
 
 
 
@@ -14,8 +16,14 @@ function Dinner(props) {
         const listItems = Dinner.map((item)=><li key={item.id}>{item.title}<br></br>${item.price}<br></br>{item.description}</li>) //// Josh helped me on this
         return( 
         <>
-        <h1>Dinner</h1>
-        <ul>{listItems}</ul>
+        <NavBar handleClick={props.handleClick}/>
+    
+    <div id="card">
+    <h1>Dinner</h1>
+    <ul>{listItems}</ul>
+    </div>
+    <BoxCard />
+    <FooterTime />
         </>)
     }
 }
