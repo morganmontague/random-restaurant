@@ -2,18 +2,10 @@ import React, {useState, useEffect} from 'react';
 
 import axios from 'axios'
 import './index.css';
-import HeaderForm from './HeaderForm';
 import List from './List';
-import BoxCard from './cards';
-import Breakfast from './breakfast';
-import Brunch from './brunch';
-import Lunch from './Lunch';
-import Dinner from './dinner';
-import Appetizer from './beforethemeal';
-import Side from './Sides';
-import Dessert from './Dessert';
+
 import FooterTime from './Footer';
-import Test from './test';
+
 import NavBar from './navbar';
 
 
@@ -114,14 +106,6 @@ console.log(page)
     )
 }}
 
-// return(
-//     <>
-//     <NavBar handleClick={handleClick}/>
-    
-//     <BoxCard />
-//     <FooterTime />
-//     </>
-// )
 }
 
 
