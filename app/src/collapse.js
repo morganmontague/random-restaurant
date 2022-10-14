@@ -1,21 +1,27 @@
-import App from "./App"
-import List from "./List"
+import App from "./App";
+import List from "./List";
 
-function Collapse (props) {
-    
-    return (
-        <>
-    <button className="btn btn-small" type="button" data-bs-toggle="collapse" data-bs-target={"#mealInfo"+ props.index} aria-expanded="false" aria-controls={"#mealInfo"+ props.index}>
-    Food Description
-  </button>
+function Collapse(props) {
+  return (
+    <>
+      <button
+        className="btn btn-small"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target={"#mealInfo" + props.index}
+        aria-expanded="false"
+        aria-controls={"#mealInfo" + props.index}
+      >
+        Food Description
+      </button>
 
-<div className="collapse" id={"mealInfo"+ props.index}>
-  <div className="card card-body">
-    {props.item}
-  </div>
-</div>
-</>
-    )
+      <div className="collapse shadow" id={"mealInfo" + props.index}>
+        <div className="card card-body shadow" id="friedFood">
+          {props.item}
+        </div>
+      </div>
+    </>
+  );
 }
 
-export default Collapse
+export default Collapse;
