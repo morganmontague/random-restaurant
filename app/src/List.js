@@ -10,6 +10,7 @@ function List(props) {
     );
     const listItems = placeHolder.map((item) => (
       <div
+  
         key={item.id}
         className="col-10 col-md-5 col-xl-3 card m-2"
         id="friedFries"
@@ -23,7 +24,7 @@ function List(props) {
     return (
       <>
         <div id="card">
-          <h1>{place}</h1>
+          <h1 id="title">{place}</h1>
           <div className="row justify-content-center">{listItems}</div>
         </div>
       </>

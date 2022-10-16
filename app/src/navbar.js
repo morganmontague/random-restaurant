@@ -9,7 +9,7 @@ function NavBar(props) {
       id="headerBox"
     >
       <div className="container-fluid">
-        <div className="navbar-brand">Store Name</div>
+        <div className="navbar-brand">Rum Ham Emporium</div>
         <button
           className="navbar-toggler"
           type="button"
