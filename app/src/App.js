@@ -4,11 +4,8 @@ import "./index.css";
 import List from "./List";
 import FooterTime from "./Footer";
 import NavBar from "./navbar";
-import panda from "./IMG/panda.gif";
 
-{
-  /* <img src={loadingGif} alt="wait until the page loads" /> */
-}
+
 
 function App(props) {
   const [data, setData] = useState({});
@@ -106,7 +103,7 @@ function App(props) {
       );
     }
   }
-  console.log(page);
+  // console.log(page);
   {
     if (page === "Home") {
       return (

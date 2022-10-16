@@ -1,5 +1,5 @@
 import React from "react";
-import App from "./App";
+
 import Collapse from "./collapse";
 
 function List(props) {
@@ -19,7 +19,7 @@ function List(props) {
         <br></br>
         <Collapse index={item.id} item={item.description} />
       </div>
-    )); //// Josh helped me on this
+    )); 
     return (
       <>
         <div id="card">

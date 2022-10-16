@@ -1,5 +1,4 @@
-import App from "./App";
-import List from "./List";
+
 
 function Collapse(props) {
   return (
