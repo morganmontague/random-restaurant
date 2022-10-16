@@ -35,7 +35,7 @@ function App(props) {
         <>
           <NavBar handleClick={handleClick} />
           <List page={page} items={data} />
-          <FooterTime />
+          
         </>
       );
     }
@@ -46,7 +46,7 @@ function App(props) {
         <>
           <NavBar handleClick={handleClick} />
           <List page={page} items={data} />
-          <FooterTime />
+          
         </>
       );
     }
@@ -57,7 +57,7 @@ function App(props) {
         <>
           <NavBar handleClick={handleClick} />
           <List page={page} items={data} />
-          <FooterTime />
+          
         </>
       );
     }
@@ -68,7 +68,7 @@ function App(props) {
         <>
           <NavBar handleClick={handleClick} />
           <List page={page} items={data} />
-          <FooterTime />
+          
         </>
       );
     }
@@ -79,7 +79,7 @@ function App(props) {
         <>
           <NavBar handleClick={handleClick} />
           <List page={page} items={data} />
-          <FooterTime />
+          
         </>
       );
     }
@@ -90,7 +90,7 @@ function App(props) {
         <>
           <NavBar handleClick={handleClick} />
           <List page={page} items={data} />
-          <FooterTime />
+          
         </>
       );
     }
@@ -101,7 +101,7 @@ function App(props) {
         <>
           <NavBar handleClick={handleClick} />
           <List page={page} items={data} />
-          <FooterTime />
+          
         </>
       );
     }
@@ -112,7 +112,7 @@ function App(props) {
       return (
         <>
           <NavBar handleClick={handleClick} />
-          <img src="./IMG/panda.gif" alt="Panda"></img>
+
           <FooterTime />
         </>
       );
