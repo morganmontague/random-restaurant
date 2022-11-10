@@ -11,16 +11,18 @@ function App(props) {
   const [data, setData] = useState({});
   const [page, setPage] = useState("Home");
 
-  const baseURL = "https://astute-baton-362318.ue.r.appspot.com/api/json/";
+  const baseURL = "https://8000-morganmonta-backendbist-7rsu6xjpwpy.ws-us75.gitpod.io/menu_app/";
 
   useEffect(() => {
     function boo() {
       axios.get(baseURL).then((response) => {
         setData(response.data);
+        
       });
     }
     boo();
   }, []);
+console.log(data)
 
   function handleClick(e) {
     setPage(e.target.firstChild.data);
