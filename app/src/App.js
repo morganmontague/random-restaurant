@@ -22,7 +22,7 @@ function App(props) {
     }
     boo();
   }, []);
-console.log(data)
+
 
   function handleClick(e) {
     setPage(e.target.firstChild.data);
